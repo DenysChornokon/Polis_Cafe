@@ -1,3 +1,11 @@
+.menuHeading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
 .productContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
