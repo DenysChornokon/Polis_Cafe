@@ -1,0 +1,22 @@
+.heroImage {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.heroText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 67%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.heroText .hero {
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+}
