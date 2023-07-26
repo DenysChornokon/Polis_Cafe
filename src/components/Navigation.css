@@ -18,7 +18,7 @@
 }
 
 .navigation .navContainer .navItem a{
-    color: #fff;
+    transition: .5s all linear;
 }
 
 .visible {
