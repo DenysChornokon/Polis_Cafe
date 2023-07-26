@@ -1,5 +1,4 @@
 .mobile {
-    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,20 +13,20 @@
 
 .mobile .logo {
     font-size: 2rem;
-    color: var(--bg-color);
     font-weight: 600;
     cursor: pointer;
+    transition: .5s all linear;
 }
 
 
 .mobile .menuIcon {
     font-size: 2rem;
-    color: #fff;
     cursor: pointer;
+    transition: .5s all linear;
 }
 
 .mobile .closeIcon {
     font-size: 2rem;
-    color: #fff;
     cursor: pointer;
+    transition: .5s all linear;
 }
