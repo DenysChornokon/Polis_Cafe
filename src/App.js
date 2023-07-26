@@ -5,16 +5,21 @@ import About from './components/About';
 import Menu from './components/Menu';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+
+
 
 function App() {
   return (
     <>
-      <HeaderMobile />
+      <HeaderMobile bgScrollColor = '#ddd4c3cc' logoDefaultColor = '#fff' logoScrollColor = '#404040' />
       <Hero />
       <About />
       <Menu />
       <Contacts />
       <Footer />
+
+      <Navigation bgScrollColor = '#ddd4c3cc' iconDefaultColor = '#fff' iconScrollColor = '#404040' />
     </>
   );
 }

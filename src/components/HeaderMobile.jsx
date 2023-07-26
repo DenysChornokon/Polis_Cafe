@@ -3,7 +3,7 @@ import './HeaderMobile.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 
-function HeaderMobile() {
+function HeaderMobile(props) {
 
   //* MENU-EXIT TOGGLE
 
@@ -15,15 +15,13 @@ function HeaderMobile() {
 
   //* BACKGROUND COLOR TOGGLE
 
-  const bgScrollColor = '#ddd4c3cc';    //? bg color
-  const logoDefaultColor = '#fff';
-  const logoScrollColor = '#404040';
+
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [bg, setBg] = useState("transparent");
-  const [logoColor, setLogoColor] = useState(logoDefaultColor);
-  const [barsColor, setBarsColor] = useState(logoDefaultColor);
-  const [exitColor, setExitColor] = useState(logoDefaultColor);
+  const [logoColor, setLogoColor] = useState(props.logoDefaultColor);
+  const [barsColor, setBarsColor] = useState(props.logoDefaultColor);
+  const [exitColor, setExitColor] = useState(props.logoDefaultColor);
 
 
   const handleScroll = () => {
@@ -40,15 +38,15 @@ function HeaderMobile() {
 
   useEffect(() => {
     if (scrollPosition > 0) {
-      setBg(bgScrollColor);
-      setBarsColor(logoScrollColor);
-      setExitColor(logoScrollColor);
-      setLogoColor(logoScrollColor);
+      setBg(props.bgScrollColor);
+      setBarsColor(props.logoScrollColor);
+      setExitColor(props.logoScrollColor);
+      setLogoColor(props.logoScrollColor);
     } else {
       setBg('transparent');
-      setBarsColor(logoDefaultColor);
-      setExitColor(logoDefaultColor);
-      setLogoColor(logoDefaultColor);
+      setBarsColor(props.logoDefaultColor);
+      setExitColor(props.logoDefaultColor);
+      setLogoColor(props.logoDefaultColor);
     }
   }, [scrollPosition]);
 
