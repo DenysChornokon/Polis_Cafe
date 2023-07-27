@@ -2,7 +2,7 @@ import React from 'react'
 import './Contacts.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons';
-import{ faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 
 function Contacts() {
@@ -19,16 +19,22 @@ function Contacts() {
 
                     <ul className="socialMedias">
                         <li>
-                            <a href="#" className="instagram"></a>
-                            <FontAwesomeIcon className='fa-instagram' icon={faInstagram} />
+                            <a href="#" className="instagram">
+                                <FontAwesomeIcon className='fa-instagram icon' icon={faInstagram} />
+                            </a>
+
                         </li>
                         <li>
-                            <a href="#" className="facebook"></a>          
-                            <FontAwesomeIcon className='fa-fecebook' icon={faFacebook} />
+                            <a href="#" className="facebook">
+                                <FontAwesomeIcon className='fa-fecebook icon' icon={faFacebook} />
+                            </a>
+
                         </li>
                         <li>
-                            <a href="#" className="telegram"></a>
-                            <FontAwesomeIcon className='fa-telegram' icon={faTelegram} />
+                            <a href="#" className="telegram">
+                                <FontAwesomeIcon className='fa-telegram icon' icon={faTelegram} />
+                            </a>
+
                         </li>
                     </ul>
                 </div>
