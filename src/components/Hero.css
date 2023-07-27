@@ -3,6 +3,7 @@
     height: 100vh;
     z-index: 0;
     object-fit: cover;
+    user-select: none;
 }
 
 .heroText {
