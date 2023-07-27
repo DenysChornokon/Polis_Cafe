@@ -6,7 +6,45 @@
     font-weight: 700;
 }
 
-.productContainer {
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .productContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     gap: 1.5rem;
@@ -58,4 +96,4 @@
     border: 2px solid var(--main-color);
     border-radius: 4px;
     text-transform: uppercase;
-}
+} */
