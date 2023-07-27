@@ -1,44 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import './Navigation.css'
 
-function Navigation({ bgScrollColor, iconDefaultColor, iconScrollColor }) {
+function Navigation({ scrollPosition, bgScrollColor, iconDefaultColor, iconScrollColor }) {
 
-    const [scrollPosition, setScrollPosition] = useState(0);
     const [bg, setBg] = useState("transparent");
-    const [item, setItem] = useState(iconDefaultColor);
+    const [iconColor, setIconColor] = useState(iconDefaultColor);
 
 
-    const handleScroll = () => {
-        const position = window.scrollY;
-        setScrollPosition(position);
-    }
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
 
-        return (() => {
-            window.removeEventListener('scroll', handleScroll);
-        })
-    }, []);
 
     useEffect(() => {
         if (scrollPosition > 0) {
             setBg(bgScrollColor);
-            setItem(iconScrollColor);
+            setIconColor(iconScrollColor);
         } else {
             setBg('transparent');
-            setItem(iconDefaultColor);
+            setIconColor(iconDefaultColor);
         }
     }, [scrollPosition]);
 
   return (
     <section className="navigation" style={{backgroundColor: bg}}>
         <ul className="navContainer">
-            <li className="navItem"><a style={{ color: item }} href="#" className="i">item</a></li>
-            <li className="navItem"><a style={{ color: item }} href="#" className="i">item</a></li>
-            <li className="navItem"><a style={{ color: item }} href="#" className="i">item</a></li>
-            <li className="navItem"><a style={{ color: item }} href="#" className="i">item</a></li>
-            <li className="navItem"><a style={{ color: item }} href="#" className="i">item</a></li>
+            <li className="navItem"><a style={{ color: iconColor }} href="#" className="i">Головна</a></li>
+            <li className="navItem"><a style={{ color: iconColor }} href="#about" className="i">Про Нас</a></li>
+            <li className="navItem"><a style={{ color: iconColor }} href="#menu" className="i">Меню</a></li>
+            <li className="navItem"><a style={{ color: iconColor }} href="#contacts" className="i">Контакти</a></li>
         </ul>
     </section>
   )

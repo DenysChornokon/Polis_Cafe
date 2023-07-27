@@ -4,21 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import Navigation from './Navigation';
 
-function HeaderMobile(props) {
+function HeaderMobile({ bgScrollColor, logoDefaultColor, logoScrollColor }) {
 
   //* MENU-EXIT TOGGLE
 
   const [isMenuVisible, setIsMenuVisible] = useState(true);
   const [isNavigationVisible, setIsNavigationVisible] = useState(false);
- 
-  function toggleMenu() {
-    setIsMenuVisible(!isMenuVisible);
-    setIsNavigationVisible(!isNavigationVisible);
-  }
 
-  const handleNavigationToggle = () => {
-    setIsNavigationVisible(!isNavigationVisible);
-  };
+
 
   //* BACKGROUND COLOR TOGGLE
 
@@ -26,9 +19,8 @@ function HeaderMobile(props) {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [bg, setBg] = useState("transparent");
-  const [logoColor, setLogoColor] = useState(props.logoDefaultColor);
-  const [barsColor, setBarsColor] = useState(props.logoDefaultColor);
-  const [exitColor, setExitColor] = useState(props.logoDefaultColor);
+  const [logoColor, setLogoColor] = useState(logoDefaultColor);
+
 
 
   const handleScroll = () => {
@@ -45,17 +37,23 @@ function HeaderMobile(props) {
 
   useEffect(() => {
     if (scrollPosition > 0) {
-      setBg(props.bgScrollColor);
-      setBarsColor(props.logoScrollColor);
-      setExitColor(props.logoScrollColor);
-      setLogoColor(props.logoScrollColor);
+      setBg(bgScrollColor);
+      setLogoColor(logoScrollColor);
     } else {
       setBg('transparent');
-      setBarsColor(props.logoDefaultColor);
-      setExitColor(props.logoDefaultColor);
-      setLogoColor(props.logoDefaultColor);
+      setLogoColor(logoDefaultColor);
     }
   }, [scrollPosition]);
+
+
+  function toggleMenu() {
+    setIsMenuVisible(!isMenuVisible);
+    setIsNavigationVisible(!isNavigationVisible);
+  }
+
+  const handleNavigationToggle = () => {
+    setIsNavigationVisible(!isNavigationVisible);
+  };
 
 
 
@@ -89,9 +87,10 @@ function HeaderMobile(props) {
 
       {isNavigationVisible && (
         <Navigation
-          bgScrollColor={props.bgScrollColor}
-          iconDefaultColor={props.iconDefaultColor}
-          iconScrollColor={props.iconScrollColor}
+          scrollPosition={scrollPosition}
+          bgScrollColor={bgScrollColor}
+          iconDefaultColor={logoDefaultColor}
+          iconScrollColor={logoScrollColor}
           onClose={handleNavigationToggle}
         />
       )}

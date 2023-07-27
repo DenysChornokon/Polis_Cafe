@@ -7,7 +7,7 @@ import{ faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-i
 
 function Contacts() {
     return (
-        <section className="contacts">
+        <section className="contacts" id='contacts'>
             <div className="flex">
                 <div className="links">
                     <div className="linksContent">
