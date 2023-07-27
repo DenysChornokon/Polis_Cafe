@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <HeaderMobile bgScrollColor = '#ddd4c3cc' logoDefaultColor = '#fff' logoScrollColor = '#404040' />
+      <HeaderMobile bgScrollColor= '#101010fa' logoDefaultColor = '#fefefe' logoScrollColor = '#fefefe' />
       <Hero />
       <About />
       <Menu />

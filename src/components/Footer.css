@@ -1,5 +1,68 @@
 footer {
-    padding: 20px;
+    background-color: var(--bg-color-dark);
+    color: var(--bg-color-lighter);
+}
+
+.heading-and-navigation {
+    margin: 2rem;
+}
+
+.heading-and-navigation .footer-heading {
     text-align: center;
-    background: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.heading-and-navigation .navContainer {
+    text-align: center;
+}
+
+.heading-and-navigation .navItem {
+    margin: 1rem 0;
+}
+
+.heading-and-navigation .navItem a {
+    color: var(--bg-color-lighter);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.heading-and-navigation .navItem a:hover {
+    color: var(--text-color-lighter);
+}
+
+.text-and-copyright {
+    margin: 0 1rem;
+    text-align: center;
+    color: var(--text-color-lighter);
+}
+
+.text-and-copyright p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.socials {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.socials .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 20%;
+}
+
+.socials .flex .icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+
+.socials .flex .icon:hover, 
+.socials .flex .icon:active {
+    color: var(--text-color-lighter);
 }
