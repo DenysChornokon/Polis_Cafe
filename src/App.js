@@ -5,7 +5,6 @@ import About from './components/About';
 import Menu from './components/Menu';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation';
 
 
 
@@ -18,8 +17,6 @@ function App() {
       <Menu />
       <Contacts />
       <Footer />
-
-      <Navigation bgScrollColor = '#ddd4c3cc' iconDefaultColor = '#fff' iconScrollColor = '#404040' />
     </>
   );
 }
