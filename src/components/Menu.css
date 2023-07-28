@@ -4,25 +4,109 @@
     margin-top: 2rem;
     color: var(--text-color);
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 
+/*
 *,
 *:before,
 *:after {
     box-sizing: border-box;
     transition: all 0.5s ease;
 }
+*/
 
 
+.menuSection {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bg-color-darker);
+    padding: .5rem 0;
+    margin-bottom: .5rem;
+    color: var(--text-color-darker);
+}
+
+.menuSection::before,
+.menuSection::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.menuSection::before {
+    left: 50%;
+    border-bottom: 3px solid var(--main-color);
+}
 
 
+.menuSection::after {
+    right: 50%;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.menuSection:hover::before,
+.menuSection:hover::after {
+    width: 50%;
+}
+
+.imageContainer {
+    margin: 5%;
+    box-shadow: var(--box-shadow);
+}
+
+.imageContainer .meal-image {
+    width: 100%;
+    padding: .5rem;
+    object-fit: cover;
+    user-select: none;
+}
+
+.short-info {
+    /* display: flex;
+    justify-content: space-around; */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.short-info h2 {
+    font-size: 1.3rem;
+    color: var(--text-color-darker);
+    font-weight: 600;
+}
+
+.short-info span {
+    font-weight: 400;
+    color: var(--text-color-darker);
+}
+
+.menuItem .imageContainer {
+    cursor: pointer;
+}
 
 
+.long-info {
+    margin: 1rem;
+}
 
+.long-info h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-color-darker);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
 
-
-
-
+.long-info p {
+    font-weight: 400;
+    color: var(--text-color-darker);
+    margin-bottom: .5rem;
+}
 
 
 
