@@ -31,3 +31,10 @@
     cursor: pointer;
     transition: .3s all linear;
 }
+
+
+@media(min-width: 700px) {
+    .mobile .logo {
+        font-size: 2.5rem;
+    }
+}
