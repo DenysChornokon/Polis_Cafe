@@ -21,3 +21,13 @@
     font-weight: 400;
     font-family: 'Pacifico', cursive;
 }
+
+@media(min-width: 900px) {
+    .heroText .heroName {
+            font-size: 2.7rem;
+        }
+
+    .heroText .heroSlogan {
+            font-size: 2rem;
+        }
+}
