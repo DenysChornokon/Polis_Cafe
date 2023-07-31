@@ -1,4 +1,4 @@
-.navigation {
+.navigation-mobile {
     position: fixed;
     top: 4.034rem;
     left: 0;
@@ -7,17 +7,17 @@
     transition: .3s all linear;
 }
 
-.navigation .navContainer {
+.navigation-mobile .navContainer {
     margin-bottom: .3rem;
     display: flex;
     justify-content: space-around;
 }
 
-.navigation .navContainer .navItem {
+.navigation-mobile .navContainer .navItem {
     margin: .7rem 0;
 }
 
-.navigation .navContainer .navItem a{
+.navigation-mobile .navContainer .navItem a {
     transition: .3s all linear;
     font-weight: 500;
     font-size: 1.2rem;
@@ -29,7 +29,23 @@
 
 
 @media(min-width: 700px) {
-    .navigation {
+    .navigation-mobile {
         top: 4.78rem;
+    }
+}
+
+@media(min-width: 800px) {
+    .navigation-mobile {
+        position: static;
+        width: 70%;
+
+    }
+
+    .navigation-mobile .navContainer .navItem {
+        margin: 0;
+    }
+
+    .navigation-mobile .navContainer .navItem a {
+        color: var(--bg-color-lighter);
     }
 }

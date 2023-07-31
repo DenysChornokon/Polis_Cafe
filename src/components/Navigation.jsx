@@ -9,7 +9,6 @@ function Navigation({ scrollPosition, bgScrollColor, iconDefaultColor, iconScrol
 
 
 
-
     useEffect(() => {
         if (scrollPosition > 0) {
             setBg(bgScrollColor);
@@ -21,7 +20,7 @@ function Navigation({ scrollPosition, bgScrollColor, iconDefaultColor, iconScrol
     }, [scrollPosition]);
 
   return (
-    <section className="navigation" style={{backgroundColor: bg}}>
+    <section className="navigation-mobile" style={{backgroundColor: bg}}>
         <ul className="navContainer">
             <li className="navItem"><a style={{ color: iconColor }} href="#" className="i">Головна</a></li>
             <li className="navItem"><a style={{ color: iconColor }} href="#about" className="i">Про Нас</a></li>
