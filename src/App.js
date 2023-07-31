@@ -29,8 +29,6 @@ function App() {
       ) : (
         <HeaderDesktop
           bgScrollColor="#101010"
-          logoDefaultColor="#fefefe"
-          logoScrollColor="#fefefe"
         />
       )}
       <Hero />
