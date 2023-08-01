@@ -1,15 +1,20 @@
-.contact {
-    margin: 2rem 1rem 5rem 1rem;
+/* .contact {
+    padding: 2rem 1rem 1rem 1rem;
+    background: #e0e0e0;
+    box-shadow: 26px 26px 52px #cecece,
+        -26px -26px 52px #f2f2f2;
+
+    max-width: 500px;
+    margin: 3rem auto;
 }
 
-.contact h2 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 2rem 0;
-    font-weight: 700;
-    font-size: 1.7rem;
-    color: var(--text-color-darker);
+.sectionContainer {
+    
+    margin-left: 15%;
+
 }
+
+
 
 .contactContainer {
     display: flex;
@@ -18,7 +23,7 @@
 }
 
 .contactContainer p {
-    margin-left: .5rem;
+    margin-left: 1.5rem;
     text-align: center;
     color: var(--text-color-darker);
 }
@@ -27,3 +32,19 @@
     font-size: 1.2em;
     color: rgba(5, 5, 5, 0.856);
 }
+
+
+@media(min-width: 800px) {
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contactContainer {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+} */
