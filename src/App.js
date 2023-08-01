@@ -5,7 +5,9 @@ import HeaderDesktop from './components/HeaderDesktop';
 import Hero from './components/Hero';
 import About from './components/About';
 import Menu from './components/Menu';
-import Contacts from './components/Contacts';
+import MenuSquares from './components/MenuSquares';
+
+
 import Footer from './components/Footer';
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
@@ -32,9 +34,9 @@ function App() {
         />
       )}
       <Hero />
-      <About />
+      <MenuSquares />
+      {/* <About /> */}
       <Menu />
-      <Contacts />
       <Footer />
     </>
   );
