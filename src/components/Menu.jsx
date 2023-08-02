@@ -44,12 +44,17 @@ function Menu() {
                                         <p>Ціна: {menuData.salaty[key].price}грн.</p>
                                         <p>{menuData.salaty[key].sklad}</p>
                                     </div>
-                                </div>
+
+                        
+
+                                </div>                              
                             </div>
                         </div>
                     ))}
-                </div>
+                </div>                
             )}
+
+            
             <h2 className="menuSection" onClick={() => setShowZacusky(!showZacusky)}>Закуски</h2>
             {showZacusky && (
                 <div className="menuSectionContainer zacusky">

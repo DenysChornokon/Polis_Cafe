@@ -20,13 +20,17 @@
 
 .menuSection {
     position: relative;
-    width: 100%;
+    width: 90vw;
+    margin: 0 auto;
     text-align: center;
     cursor: pointer;
-    background-color: var(--bg-color-darker);
+    background-color: var(--bg-color-lighter);
+    /* margin: 0 2rem; */
     padding: .5rem 0;
-    margin-bottom: .5rem;
+    margin-bottom: 1.1rem;
     color: var(--text-color-darker);
+    box-shadow: -9px 9px 18px #d0d0d0,
+            9px -9px 18px #f0f0f0;
 }
 
 .menuSection::before,
@@ -55,9 +59,12 @@
     width: 50%;
 }
 
+
+
 .imageContainer {
     margin: 5%;
-    box-shadow: var(--box-shadow);
+    box-shadow: -9px 9px 18px #d0d0d0,
+        9px -9px 18px #f0f0f0;
     position: relative;
     padding-bottom: 1rem;
 }
