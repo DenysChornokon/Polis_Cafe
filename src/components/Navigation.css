@@ -18,9 +18,14 @@
 }
 
 .navigation-mobile .navContainer .navItem a {
-    transition: .3s all linear;
+    transition: .1s all linear;
     font-weight: 500;
     font-size: 1.2rem;
+    transition: .3s all linear;
+}
+
+.navigation-mobile .navContainer .navItem a:hover {
+    color: var(--bg-color-darker);
 }
 
 .visible {
@@ -38,6 +43,7 @@
     .navigation-mobile {
         position: static;
         width: 70%;
+        margin-top: .5rem;
 
     }
 
