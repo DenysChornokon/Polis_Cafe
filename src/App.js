@@ -30,7 +30,7 @@ function App() {
         />
       ) : (
         <HeaderDesktop
-          bgScrollColor="#101010"
+          bgScrollColor="#101010f2"
         />
       )}
       <Hero />
