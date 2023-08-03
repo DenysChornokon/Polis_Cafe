@@ -25,7 +25,7 @@
 }
 
 .navigation-mobile .navContainer .navItem a:hover {
-    color: var(--bg-color-darker);
+    color: rgb(211, 211, 211);
 }
 
 .visible {

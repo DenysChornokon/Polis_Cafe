@@ -12,7 +12,7 @@ function Footer() {
         <div className="heading-and-navigation">
           <h2 className="footer-heading">«Поліс»</h2>
           <ul className="navContainer">
-            <li className="navItem"><a href="#" className="i">Головна</a></li>
+            <li className="navItem"><a href="#" className="i"><span>Головна</span></a></li>
             <li className="navItem"><a href="#about" className="i">Про Нас</a></li>
             <li className="navItem"><a href="#menu" className="i">Меню</a></li>
             <li className="navItem"><a href="#contacts" className="i">Контакти</a></li>

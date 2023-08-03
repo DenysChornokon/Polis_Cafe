@@ -3,6 +3,7 @@ footer {
     color: var(--bg-color-lighter);
 }
 
+
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,9 +22,13 @@ footer {
     margin-bottom: 2rem;
 }
 
+
+
 .heading-and-navigation .navContainer {
     text-align: center;
 }
+
+
 
 .heading-and-navigation .navItem {
     margin: 1rem 0;

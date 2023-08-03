@@ -34,8 +34,8 @@ function App() {
         />
       )}
       <Hero />
+      <About />
       <MenuSquares />
-      {/* <About /> */}
       <Menu />
       <Footer />
     </>

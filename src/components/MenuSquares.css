@@ -1,5 +1,5 @@
 .menu-squares-container {
-    padding: 5rem 0;
+    padding: 5rem 0 3.1rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -7,7 +7,6 @@
     grid-row-gap: 2rem;
     max-width: 1060px;
     margin: 0 auto;
-
 }
 
 .one {

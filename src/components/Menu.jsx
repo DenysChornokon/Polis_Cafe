@@ -313,6 +313,11 @@ function Menu() {
                     </div>
                 )}
             </section>
+            <div className="iconContainerDeskTop">
+                <a href='#menu'>
+                    <FontAwesomeIcon className='icon' icon={faCircleUp} />
+                </a>
+            </div>
         </div>
     );
 }
