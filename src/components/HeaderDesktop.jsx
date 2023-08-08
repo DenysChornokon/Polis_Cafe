@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './HeaderDesktop.css'
 import Navigation from './Navigation'
+import Logo from '../assets/images/logo.png'
 
 function HeaderDesktop({ bgScrollColor}) {
 
@@ -33,7 +34,7 @@ function HeaderDesktop({ bgScrollColor}) {
             <div className="width-container">
                 <div className="logo-container">
                     <a href="#" className="logo">
-                        Polis
+                        <img id='logo' src={Logo} alt="logo" />
                     </a>
                 </div>
                 <Navigation />
