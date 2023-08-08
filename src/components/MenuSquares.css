@@ -21,6 +21,12 @@
 .two {
     grid-area: 1 / 2 / 2 / 3;
     margin-right: 32px;
+    background-image: url(../assets/DSC_1976.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    
 }
 
 .three {
