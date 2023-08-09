@@ -1,40 +1,40 @@
 .mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: .5rem 9%;
-    transition: .3s all linear;
-    z-index: 1000;
-    user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 9%;
+  transition: 0.3s all linear;
+  z-index: 1000;
+  user-select: none;
 }
 
 .mobile .logo {
-    font-size: 2.3rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .3s all linear;
+  cursor: pointer;
+  transition: 0.3s all linear;
 }
 
+.mobile .logo #logo {
+  width: 3rem;
+}
 
 .mobile .menuIcon {
-    font-size: 2rem;
-    cursor: pointer;
-    transition: .3s all linear;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s all linear;
 }
 
 .mobile .closeIcon {
-    font-size: 2rem;
-    cursor: pointer;
-    transition: .3s all linear;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s all linear;
 }
 
-
-@media(min-width: 700px) {
-    .mobile .logo {
-        font-size: 2.7rem;
-    }
+@media (min-width: 700px) {
+  .mobile .logo #logo {
+    width: 3.5rem;
+  }
 }

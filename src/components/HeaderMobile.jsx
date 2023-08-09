@@ -3,6 +3,8 @@ import './HeaderMobile.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import Navigation from './Navigation';
+import Logo from "../assets/images/logo.png";
+
 
 function HeaderMobile({ bgScrollColor, logoDefaultColor, logoScrollColor }) {
 
@@ -61,7 +63,7 @@ function HeaderMobile({ bgScrollColor, logoDefaultColor, logoScrollColor }) {
     <header className='mobile' style={{ background: bg }}>
       <div className="logo-container">
         <a href="#" className="logo" style={{ color: logoColor }}>
-          Polis
+          <img id='logo' src={Logo} alt="logo" />
         </a>
       </div>
 

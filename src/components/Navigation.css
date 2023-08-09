@@ -14,13 +14,13 @@
 }
 
 .navigation-mobile .navContainer .navItem {
-    margin: .7rem 0;
+    margin: 2.5rem 0 1rem 0;
 }
 
 .navigation-mobile .navContainer .navItem a {
     transition: .1s all linear;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: .3s all linear;
 }
 
@@ -42,8 +42,9 @@
 @media(min-width: 800px) {
     .navigation-mobile {
         position: static;
-        width: 70%;
+        width: 60%;
         margin-top: .5rem;
+        padding-left: 3rem;
 
     }
 

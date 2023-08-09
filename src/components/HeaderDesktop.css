@@ -4,7 +4,7 @@
 }
 
 .desktop .logo-container #logo {
-    width: 20%;
+    width: 4rem;
 }
 .desktop .logo-container .logo {
     text-align: center;
@@ -29,3 +29,5 @@
     margin: 0 auto;
 
 }
+
+
