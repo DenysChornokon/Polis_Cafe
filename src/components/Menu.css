@@ -18,13 +18,13 @@
 }
 
 .sectionHeading {
-    /* text-align: center; */
-    padding: 2rem 0 3.3rem 1rem;
-    font-size: 2rem;
-    color: var(--text-color-lighter);
-    max-width: 1000px;
-    width: 90vw;
-    margin: 0 auto;
+  /* text-align: center; */
+  padding: 2rem 0 3.3rem 1rem;
+  font-size: 2rem;
+  color: var(--text-color-lighter);
+  max-width: 1000px;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .menuSectionContainer {
@@ -200,6 +200,52 @@
   opacity: 1;
 }
 
+/*? DRINKS */
+
+/* .drinks-container {
+
+} */
+
+/* .kava-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
+} */
+
+
+
+#plus-icon {
+  margin-left: 1rem;
+  color: var(--text-color-darker);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.list li{
+  margin: 0 0 2rem 3rem;
+}
+
+.drinks-peredzam {
+  padding-left: 1rem;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1000px;
+  
+}
+
+.drinks-peredzam li {
+  list-style: inside;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color-darker);
+}
+
+.meels-container {
+  margin-bottom: 5rem;
+}
+
 @media (min-width: 600px) {
   .iconContainer {
     display: none;
@@ -209,6 +255,9 @@
   }
   .menuHeading {
     font-size: 3rem;
+  }
+  .drinks-peredzam li {
+    font-size: 1.2rem;
   }
 }
 
@@ -226,6 +275,11 @@
 
   .menuHeading {
     font-size: 2.7rem;
+  }
+
+  .drinks-peredzam li {
+    font-size: 1.3rem;
+    font-weight: 400;
   }
 }
 

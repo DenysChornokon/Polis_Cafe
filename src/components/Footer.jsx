@@ -22,7 +22,7 @@ function Footer() {
         
 
         <div className="text">
-          <p className='text'>Ми пропонуємо домашні страви – не вдома, без клопоту,
+          <p className='text'>Ми пропонуємо домашні страви
             тільки з свіжих та якісних продуктів, з посмішкою та позитивною енергетикою.
           </p>
           <div className="flex desktopp">

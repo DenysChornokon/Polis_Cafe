@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Menu.css";
 import menuData from "../data/menu.json";
+import napoiData from "../data/napoi.json";
+import peredzamData from "../data/peredzamovlennia.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUp } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUp, faPlus } from "@fortawesome/free-solid-svg-icons";
 import ImageExample from "../assets/images/Картопля по-селянські.jpg";
 function Menu() {
   const [selectedItems, setSelectedItems] = useState({});
@@ -18,16 +20,23 @@ function Menu() {
   const [showDeserti, setShowDeserti] = useState(false);
   const [showSnidanky, setShowSnidanky] = useState(false);
   const [showBiznes_lanch, setShowBiznes_lanch] = useState(false);
+  const [showKava, setShowKava] = useState(false);
+  const [showChai, setShowChai] = useState(false);
 
   function toggleLongShort(key) {
     setSelectedItems((prevState) => ({ ...prevState, [key]: !prevState[key] }));
   }
+
+  // function togglePlus() {
+  //   showKava ? setShowKava(!showKava) : setShowKava(showKava);
+  // }
+
   return (
     <div className="menu-bg-container">
       <section className="menu" id="menu">
         <h2 className="menuHeading">Меню</h2>
         <div className="stravy">
-          <h2 id="stravy" className="sectionHeading">
+          <h2 id="main-menu" className="sectionHeading">
             Основне меню
           </h2>
 
@@ -703,12 +712,100 @@ function Menu() {
           <FontAwesomeIcon className="icon" icon={faCircleUp} />
         </a>
       </div>
-      <h2 id="stravy" className="sectionHeading">
+      <h2 id="drinks-heading" className="sectionHeading">
         Напої
       </h2>
+
+      <div className="drinks-container">
+        <ul className="drinks-peredzam">
+          <li className="kava">
+            Кава
+            <FontAwesomeIcon
+              id="plus-icon"
+              icon={faPlus}
+              onClick={() => {
+                setShowKava(!showKava);
+              }}
+            />
+          </li>
+
+          <div className="extra">
+            {showKava &&
+              Object.keys(napoiData.kava).map((key) => (
+                <ul key={key} className="list">
+                  <li>
+                    {napoiData.kava[key].name} - {napoiData.kava[key].size}мг/
+                    {napoiData.kava[key].price}грн
+                  </li>
+                </ul>
+              ))}
+          </div>
+          <li className="kava">
+            Чай
+            <FontAwesomeIcon
+              id="plus-icon"
+              icon={faPlus}
+              onClick={() => {
+                setShowChai(!showChai);
+              }}
+            />
+          </li>
+
+          <div className="extra">
+            {showChai &&
+              Object.keys(napoiData.chai).map((key) => (
+                <ul key={key} className="list">
+                  <li>
+                    {napoiData.chai[key].name} - {napoiData.chai[key].size}мг /
+                    {napoiData.chai[key].price}грн
+                  </li>
+                </ul>
+              ))}
+          </div>
+          <li>
+            {napoiData.Uzvar.name} - {napoiData.Uzvar.size}мг /
+            {napoiData.Uzvar.price}грн
+          </li>
+          <li>
+            {napoiData.lymonad.name} - {napoiData.lymonad.size}мг /
+            {napoiData.lymonad.price}грн
+          </li>
+          <li>
+            {napoiData.gazovani_napoi.name} - {napoiData.gazovani_napoi.size}мг
+            /{napoiData.gazovani_napoi.price}грн
+          </li>
+          <li>
+            {napoiData.vodi_asort.name} - {napoiData.vodi_asort.size}мг /
+            {napoiData.vodi_asort.price}грн
+          </li>
+          <li>
+            {napoiData.soki_asort.name} - {napoiData.soki_asort.size}мг /
+            {napoiData.soki_asort.price}грн
+          </li>
+          <li>
+            {napoiData.bavariya.name} - {napoiData.bavariya.size}мг /
+            {napoiData.bavariya.price}грн
+          </li>
+          <li>
+            {napoiData.vine.name} - {napoiData.vine.size}мг /
+            {napoiData.vine.price}грн
+          </li>
+        </ul>
+      </div>
+
       <h2 id="stravy" className="sectionHeading">
         Передзамовлення страв
       </h2>
+      <div className="meels-container">
+        {Object.keys(peredzamData).map((key) => (
+          <ul key={key} className="drinks-peredzam">
+            <li>
+              {peredzamData[key].name} - {peredzamData[key].weight}г /{" "}
+              {peredzamData[key].price}грн
+            </li>
+          </ul>
+        ))}
+      </div>
     </div>
   );
 }
