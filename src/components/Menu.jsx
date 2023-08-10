@@ -806,6 +806,9 @@ function Menu() {
           </ul>
         ))}
       </div>
+      <div className="reserv-number">
+        <h3>Номер для замовлення: (+38) 050 837 20 31 .</h3>
+      </div>
     </div>
   );
 }

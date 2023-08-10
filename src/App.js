@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Menu from './components/Menu';
 import MenuSquares from './components/MenuSquares';
+import Map from './components/Map';
 
 
 import Footer from './components/Footer';
@@ -37,6 +38,7 @@ function App() {
       <About />
       <MenuSquares />
       <Menu />
+      <Map />
       <Footer />
     </>
   );

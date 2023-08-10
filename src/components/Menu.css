@@ -213,7 +213,14 @@
   width: 10%;
 } */
 
-
+.reserv-number {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 2rem auto 7rem auto;
+  width: 100%;
+  color: var(--text-color-lighter);
+}
 
 #plus-icon {
   margin-left: 1rem;
