@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import Slider from './Carousel.jsx'
-import { SliderData } from "./CarouselData";
+// import { SliderData } from "./CarouselData";
 import AboutImage from '../assets/side-img-1.avif'
 
 function About() {
@@ -20,7 +20,7 @@ function About() {
           </p>
         </div>
       </section>
-      <Slider slides={SliderData} />
+      {/* <Slider slides={SliderData} /> */}
     </div>
   );
 }

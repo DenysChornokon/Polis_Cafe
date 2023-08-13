@@ -90,6 +90,13 @@
     opacity: 1;
 }
 
+.menu-photo {
+    position: absolute;
+    left: 10%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 
 @media(max-width: 800px) {
     .menu-squares-container {
