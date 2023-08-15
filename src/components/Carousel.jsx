@@ -1,51 +1,39 @@
-import React, { useState } from "react";
+import React from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
-import { SliderData } from "./CarouselData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleArrowLeft,
-  faCircleArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
-const Carousel = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-
+import Image from '../assets/DSC_1976.jpg'
+function Carousel() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
   return (
-    <section className="slider">
-      <FontAwesomeIcon
-        className="left-arrow"
-        icon={faCircleArrowLeft}
-        onClick={prevSlide}
-      />
-      <FontAwesomeIcon
-        className="right-arrow"
-        icon={faCircleArrowRight}
-        onClick={nextSlide}
-      />
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? "slide active" : "slide"}
-            key={index}
-          >
-            {index === current && <img className="img" src={slide.image} />}
-          </div>
-        );
-      })}
-    </section>
+    <Slider {...settings}>
+      <div>
+        <img className='slider-img' src={Image} alt="" />
+      </div>
+      <div>
+        <img className='slider-img' src={Image} alt="" />
+      </div>
+      <div>
+        <img className='slider-img' src={Image} alt="" />
+      </div>
+      <div>
+        <img className='slider-img' src={Image} alt="" />
+      </div>
+      <div>
+        <img className='slider-img' src={Image} alt="" />
+      </div>
+      <div>
+        <h3>6</h3>
+      </div>
+    </Slider>
   );
-};
+}
 
-export default Carousel;
+export default Carousel

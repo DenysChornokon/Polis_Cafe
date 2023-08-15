@@ -1,9 +1,7 @@
 import React from 'react'
 import './About.css'
-import Slider from './Carousel.jsx'
-// import { SliderData } from "./CarouselData";
 import AboutImage from '../assets/side-img-1.avif'
-
+import Carousel from './Carousel';
 function About() {
   return (
     <div className="about-bg-container">
@@ -20,7 +18,10 @@ function About() {
           </p>
         </div>
       </section>
-      {/* <Slider slides={SliderData} /> */}
+
+      <div className="slider-container">
+        <Carousel />
+      </div>
     </div>
   );
 }

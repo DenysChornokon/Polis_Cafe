@@ -7,7 +7,7 @@ import About from './components/About';
 import Menu from './components/Menu';
 import MenuSquares from './components/MenuSquares';
 import Map from './components/Map';
-
+import Carousel from './components/Carousel';
 
 import Footer from './components/Footer';
 function App() {
@@ -36,10 +36,11 @@ function App() {
       )}
       <Hero />
       <About />
+
       <MenuSquares />
       <Menu />
       <Map />
-      <Footer />
+      <Footer /> 
     </>
   );
 }
