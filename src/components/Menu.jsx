@@ -5,6 +5,9 @@ import napoiData from "../data/napoi.json";
 import peredzamData from "../data/peredzamovlennia.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUp, faPlus } from "@fortawesome/free-solid-svg-icons";
+import Menu_1 from "../assets/images/menu_page-0001.jpg";
+import Menu_2 from "../assets/images/menu_page-0002.jpg";
+import Menu_3 from "../assets/images/Drinks.jpg";
 import ImageExample from "../assets/images/Картопля по-селянські.jpg";
 function Menu() {
   const [selectedItems, setSelectedItems] = useState({});
@@ -31,14 +34,37 @@ function Menu() {
   //   showKava ? setShowKava(!showKava) : setShowKava(showKava);
   // }
 
+  const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
+
+  const handleButtonClick = () => {
+    isMenuDisplayed === false ? setIsMenuDisplayed(true) : setIsMenuDisplayed(false);
+  };
+
   return (
     <div className="menu-bg-container">
       <section className="menu" id="menu">
         <h2 className="menuHeading">Меню</h2>
         <div className="stravy">
-          <h2 id="main-menu" className="sectionHeading">
-            Основне меню
-          </h2>
+          <div className="sectionHeading">
+            <h2 id="main-menu">Основне меню</h2>
+            <button className="open-menu-btn" onClick={handleButtonClick}>
+              Скорочене меню
+            </button>
+          </div>
+
+          {/* Image Menu */}
+
+          {isMenuDisplayed && (
+            <>
+              <img src={Menu_1} alt="" className="menu-photo" />
+              <img src={Menu_2} alt="" className=" menu-photo" />
+              <img
+                src={Menu_3}
+                alt=""
+                className=" menu-photo menu-photo-last"
+              />
+            </>
+          )}
 
           <h2
             className="menuSection"
@@ -712,7 +738,7 @@ function Menu() {
           <FontAwesomeIcon className="icon" icon={faCircleUp} />
         </a>
       </div>
-      <h2 id="drinks-heading" className="sectionHeading">
+      <h2 id="drinks-heading" className="lowerHeading">
         Напої
       </h2>
 
@@ -793,7 +819,7 @@ function Menu() {
         </ul>
       </div>
 
-      <h2 id="stravy" className="sectionHeading">
+      <h2 id="stravy" className="lowerHeading">
         Передзамовлення страв
       </h2>
       <div className="meels-container">

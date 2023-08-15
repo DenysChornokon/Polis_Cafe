@@ -1,16 +1,11 @@
 import React, { useState } from 'react'
 import './MenuSquares.css'
 import TestImg from '../assets/DSC_1976.jpg'
-import Menu_1 from '../assets/images/menu_page-0001.jpg'
-import Menu_2 from '../assets/images/menu_page-0002.jpg'
+
 
 function MenuSquares() {
 
-  const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
 
-  const handleButtonClick = () => {
-    setIsMenuDisplayed(true);
-  }
 
     return (
       <div className="menu-squares-container">
@@ -22,9 +17,9 @@ function MenuSquares() {
               натуральні та органічні продукти.
             </p>
           </div>
-          <button className="card-button" onClick={handleButtonClick}>
-            Перейти
-          </button>
+          <a href="#menu">
+            <button className="card-button">Перейти</button>
+          </a>
         </div>
         <div className="card two">
           <div className="card-details">
@@ -33,7 +28,9 @@ function MenuSquares() {
               Наші напої втілюють найкращі традиції домашньої кухні.
             </p>
           </div>
-          <button className="card-button">Перейти</button>
+          <a href="#drinks-heading">
+            <button className="card-button">Перейти</button>
+          </a>
         </div>
         <div className="card three">
           <div className="card-details">
@@ -43,14 +40,8 @@ function MenuSquares() {
               заздалегідь обраний день та годину .
             </p>
           </div>
-          <button className="card-button">Перейти</button>
+          <a href="#stravy"><button className="card-button">Перейти</button></a>
         </div>
-
-        {/* Image Menu */}
-
-        {isMenuDisplayed && (
-          <img src={Menu_1} alt="" className="menu-photo" />
-        )}
       </div>
     );
 }

@@ -18,13 +18,36 @@
 }
 
 .sectionHeading {
-  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem 0 3.3rem 1rem;
-  font-size: 2rem;
-  color: var(--text-color-lighter);
   max-width: 1000px;
   width: 90vw;
   margin: 0 auto;
+}
+
+.sectionHeading h2 {
+  font-size: 2rem;
+  color: var(--text-color-lighter);
+}
+.sectionHeading .open-menu-btn {
+  font-size: 1.2rem;
+  color: var(--text-color-darker);
+  cursor: pointer;
+  background: none;
+}
+
+.menu-photo {   
+   width: 100%;
+}
+
+.menu-photo-last {
+  margin-bottom: 5rem;
+}
+
+.sectionHeading .open-menu-btn:hover {
+  color: var(--main-color);
 }
 
 .menuSectionContainer {
@@ -83,7 +106,7 @@
 .iconContainerDeskTop {
   width: 100%;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
   margin-bottom: 1rem;
 }
 
@@ -202,16 +225,14 @@
 
 /*? DRINKS */
 
-/* .drinks-container {
-
-} */
-
-/* .kava-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 10%;
-} */
+.lowerHeading {
+  padding: 6rem 0 3.3rem 1rem;
+  max-width: 1000px;
+  width: 90vw;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: var(--text-color-lighter);
+}
 
 .reserv-number {
   font-size: 1.2rem;
@@ -265,6 +286,15 @@
   }
   .drinks-peredzam li {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .open-menu-btn {
+    display: none;
+  }
+  .menu-photo {
+    display: none;
   }
 }
 
