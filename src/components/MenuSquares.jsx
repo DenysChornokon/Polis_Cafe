@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './MenuSquares.css'
-import TestImg from '../assets/DSC_1976.jpg'
+import TestImg from '../assets/coffee-cup.jpg'
 
 
 function MenuSquares() {

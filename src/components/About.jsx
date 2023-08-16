@@ -1,6 +1,5 @@
 import React from 'react'
 import './About.css'
-import AboutImage from '../assets/side-img-1.avif'
 import Carousel from './Carousel';
 function About() {
   return (

@@ -16,12 +16,18 @@
     background-position: center;
     background-size: cover;
     margin-left: 32px;
+
+    background-image: url(../assets/images/Борщ\ комп.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
 }
 
 .two {
     grid-area: 1 / 2 / 2 / 3;
     margin-right: 32px;
-    background-image: url(../assets/DSC_1976.jpg);
+    background-image: url(../assets/coffee-cup.jpg);
     background-position: center;
     background-size: cover;
     
@@ -31,7 +37,13 @@
 
 .three {
     grid-area: 2 / 2 / 3 / 3;
-    margin-right: 32px
+    margin-right: 32px;
+
+    background-image: url(../assets/images/Паштет\ в\ винном\ .jpg);
+    background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
 }
 
 .card {
