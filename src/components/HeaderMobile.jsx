@@ -3,7 +3,7 @@ import './HeaderMobile.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import Navigation from './Navigation';
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo_white.png";
 
 
 function HeaderMobile({ bgScrollColor, logoDefaultColor, logoScrollColor }) {

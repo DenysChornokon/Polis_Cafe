@@ -5,9 +5,16 @@ import napoiData from "../data/napoi.json";
 import peredzamData from "../data/peredzamovlennia.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUp, faPlus } from "@fortawesome/free-solid-svg-icons";
+
+// IMAGES
+
 import Menu_1 from "../assets/images/menu_page-0001.jpg";
 import Menu_2 from "../assets/images/menu_page-0002.jpg";
 import Menu_3 from "../assets/images/Drinks.jpg";
+
+import Salads_1 from "../assets/images/Salads/Салат із баклажанами.jpg"
+
+
 import ImageExample from "../assets/images/Картопля по-селянські.jpg";
 function Menu() {
   const [selectedItems, setSelectedItems] = useState({});
@@ -85,7 +92,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={Salads_1}
                           alt="blin, ne gruze cartynku :("
                         />
                         <div

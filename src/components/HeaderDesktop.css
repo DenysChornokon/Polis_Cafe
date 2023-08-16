@@ -4,10 +4,11 @@
 }
 
 .desktop .logo-container #logo {
-    width: 3.5rem;
+    width: 5rem;
 }
 .desktop .logo-container .logo {
     text-align: center;
+    
 }
 
 .desktop {

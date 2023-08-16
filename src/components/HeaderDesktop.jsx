@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './HeaderDesktop.css'
 import Navigation from './Navigation'
-import Logo from '../assets/images/logo.png'
+import Logo from '../assets/images/logo_white.png'
 
 function HeaderDesktop({ bgScrollColor}) {
 

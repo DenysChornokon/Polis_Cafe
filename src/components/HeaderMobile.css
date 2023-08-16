@@ -18,7 +18,7 @@
 }
 
 .mobile .logo #logo {
-  width: 3rem;
+  width: 4rem;
 }
 
 .mobile .menuIcon {
@@ -35,6 +35,6 @@
 
 @media (min-width: 700px) {
   .mobile .logo #logo {
-    width: 3.5rem;
+    width: 4.5rem;
   }
 }
