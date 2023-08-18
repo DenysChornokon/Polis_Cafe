@@ -1,6 +1,6 @@
 .navigation-mobile {
     position: fixed;
-    top: 4.034rem;
+    top: 4.634rem;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -35,7 +35,7 @@
 
 @media(min-width: 700px) {
     .navigation-mobile {
-        top: 4.78rem;
+        top: 5rem;
     }
 }
 

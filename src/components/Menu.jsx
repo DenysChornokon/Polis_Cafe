@@ -6,13 +6,30 @@ import peredzamData from "../data/peredzamovlennia.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUp, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-// IMAGES
+//* IMAGES
 
 import Menu_1 from "../assets/images/menu_page-0001.jpg";
 import Menu_2 from "../assets/images/menu_page-0002.jpg";
 import Menu_3 from "../assets/images/Drinks.jpg";
 
-import Salads_1 from "../assets/images/Salads/Салат із баклажанами.jpg"
+//* SALADS C:/Users/Windows10/Desktop/Container/polis-react/src/assets/images/Salads/Олівє.jpg"
+
+import "../assets/images/Salads/Олівє.jpg";
+import Salads_2 from "../assets/images/Salads/Салат Цезар.jpg"
+import Salads_3 from "../assets/images/Salads/Салат касабланка.jpg"
+import Salads_4 from "../assets/images/Salads/Салат Італія.jpg"
+import Salads_5 from "../assets/images/Salads/Салат Норвегія.jpg"
+import Salads_6 from "../assets/images/Salads/Салат з грибами.jpg"
+import Salads_7 from "../assets/images/Salads/Салат Буржуй.jpg"
+import Salads_8 from "../assets/images/Salads/Салат Сир.jpg"
+import Salads_9 from "../assets/images/Salads/Олівє.jpg"//! !!!!!!!!!!!!!!!
+import Salads_10 from "../assets/images/Salads/Салат Грецький.jpg"
+import Salads_11 from "../assets/images/Salads/Салат по домашньому.jpg"
+import Salads_12 from "../assets/images/Salads/Салат з капусти.jpg"
+import Salads_13 from "../assets/images/Salads/Олівє.jpg"
+import Salads_14 from "../assets/images/Salads/Салат крабові палички.jpg"
+import Salads_15 from "../assets/images/Salads/Салат Мімоза.jpg"
+import Salads_16 from "../assets/images/Salads/Салат оселедець під шубою.jpg"
 
 
 import ImageExample from "../assets/images/Картопля по-селянські.jpg";
@@ -92,8 +109,8 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={Salads_1}
-                          alt="blin, ne gruze cartynku :("
+                          src={menuData.salaty[key].image}
+                          alt="Image"
                         />
                         <div
                           className={`short-info ${
@@ -147,7 +164,7 @@ function Menu() {
                         <img
                           className="meal-image"
                           src={ImageExample}
-                          alt="blin, ne gruze cartynku :("
+                          alt="Image"
                         />
                         <div
                           className={`short-info ${
@@ -201,7 +218,7 @@ function Menu() {
                         <img
                           className="meal-image"
                           src={ImageExample}
-                          alt="blin, ne gruze cartynku :("
+                          alt="Image"
                         />
                         <div
                           className={`short-info ${
@@ -255,7 +272,7 @@ function Menu() {
                         <img
                           className="meal-image"
                           src={ImageExample}
-                          alt="blin, ne gruze cartynku :("
+                          alt="Image"
                         />
                         <div
                           className={`short-info ${
@@ -309,7 +326,7 @@ function Menu() {
                         <img
                           className="meal-image"
                           src={ImageExample}
-                          alt="blin, ne gruze cartynku :("
+                          alt="Image"
                         />
                         <div
                           className={`short-info ${
@@ -367,7 +384,7 @@ function Menu() {
                         <img
                           className="meal-image"
                           src={ImageExample}
-                          alt="blin, ne gruze cartynku :("
+                          alt="Image"
                         />
                         <div
                           className={`short-info ${
@@ -479,7 +496,7 @@ function Menu() {
                         <img
                           className="meal-image"
                           src={ImageExample}
-                          alt="blin, ne gruze cartynku :("
+                          alt="Image"
                         />
                         <div
                           className={`short-info ${

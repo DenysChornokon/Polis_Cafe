@@ -38,13 +38,12 @@
 .three {
     grid-area: 2 / 2 / 3 / 3;
     margin-right: 32px;
-
     background-image: url(../assets/images/Паштет\ в\ винном\ .jpg);
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;   
     background-repeat: no-repeat;
 }
+
 
 .card {
     border-radius: 20px;
@@ -57,7 +56,7 @@
 }
 
 .card-details {
-    color: black;
+    color: var(--bg-color-darker);
     height: 100%;
     gap: .5em;
     display: grid;
@@ -82,12 +81,13 @@
 }
 
 .text-body {
-    color: rgb(134, 134, 134);
+    color: var(--bg-color-darker);
+    font-size: 1.1em;
 }
 
 /*Text*/
 .text-title {
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
