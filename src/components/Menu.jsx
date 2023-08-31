@@ -12,25 +12,7 @@ import Menu_1 from "../assets/images/menu_page-0001.jpg";
 import Menu_2 from "../assets/images/menu_page-0002.jpg";
 import Menu_3 from "../assets/images/Drinks.jpg";
 
-//* SALADS C:/Users/Windows10/Desktop/Container/polis-react/src/assets/images/Salads/Олівє.jpg"
-
-import "../assets/images/Salads/Олівє.jpg";
-import Salads_2 from "../assets/images/Salads/Салат Цезар.jpg"
-import Salads_3 from "../assets/images/Salads/Салат касабланка.jpg"
-import Salads_4 from "../assets/images/Salads/Салат Італія.jpg"
-import Salads_5 from "../assets/images/Salads/Салат Норвегія.jpg"
-import Salads_6 from "../assets/images/Salads/Салат з грибами.jpg"
-import Salads_7 from "../assets/images/Salads/Салат Буржуй.jpg"
-import Salads_8 from "../assets/images/Salads/Салат Сир.jpg"
-import Salads_9 from "../assets/images/Salads/Олівє.jpg"//! !!!!!!!!!!!!!!!
-import Salads_10 from "../assets/images/Salads/Салат Грецький.jpg"
-import Salads_11 from "../assets/images/Salads/Салат по домашньому.jpg"
-import Salads_12 from "../assets/images/Salads/Салат з капусти.jpg"
-import Salads_13 from "../assets/images/Salads/Олівє.jpg"
-import Salads_14 from "../assets/images/Salads/Салат крабові палички.jpg"
-import Salads_15 from "../assets/images/Salads/Салат Мімоза.jpg"
-import Salads_16 from "../assets/images/Salads/Салат оселедець під шубою.jpg"
-
+import "../assets/images/Zacusky/Намазка.jpg"
 
 import ImageExample from "../assets/images/Картопля по-селянські.jpg";
 function Menu() {
@@ -54,6 +36,7 @@ function Menu() {
     setSelectedItems((prevState) => ({ ...prevState, [key]: !prevState[key] }));
   }
 
+
   // function togglePlus() {
   //   showKava ? setShowKava(!showKava) : setShowKava(showKava);
   // }
@@ -61,8 +44,17 @@ function Menu() {
   const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
 
   const handleButtonClick = () => {
-    isMenuDisplayed === false ? setIsMenuDisplayed(true) : setIsMenuDisplayed(false);
+    isMenuDisplayed === false
+      ? setIsMenuDisplayed(true)
+      : setIsMenuDisplayed(false);
   };
+
+  let Salads = [];
+
+  Object.keys(menuData.salaty).map((key) => {
+    let image = menuData.salaty[key].image;
+    Salads = [...Salads, image];
+  })
 
   return (
     <div className="menu-bg-container">
@@ -100,43 +92,45 @@ function Menu() {
           {showSalads && (
             <div className="menuSectionContainer salads">
               {menuData.salaty &&
-                Object.keys(menuData.salaty).map((key) => (
-                  <div key={key} className="menuItem">
-                    <div className="highlight">
-                      <div
-                        className="imageContainer"
-                        onClick={() => toggleLongShort(key)}
-                      >
-                        <img
-                          className="meal-image"
-                          src={menuData.salaty[key].image}
-                          alt="Image"
-                        />
+                Object.keys(menuData.salaty).map((key) => {
+                  return (
+                    <div key={key} className="menuItem">
+                      <div className="highlight">
                         <div
-                          className={`short-info ${
-                            !selectedItems[key] ? "show" : ""
-                          }`}
+                          className="imageContainer"
+                          onClick={() => toggleLongShort(key)}
                         >
-                          <h2>{menuData.salaty[key].name}</h2>
-                          <span>
-                            {menuData.salaty[key].price}грн /{" "}
-                            {menuData.salaty[key].weight}г
-                          </span>
-                        </div>
-                        <div
-                          className={`long-info ${
-                            selectedItems[key] ? "show" : ""
-                          }`}
-                        >
-                          <h2>{menuData.salaty[key].name}</h2>
-                          <p>Вага: {menuData.salaty[key].weight}г.</p>
-                          <p>Ціна: {menuData.salaty[key].price}грн.</p>
-                          <p>{menuData.salaty[key].sklad}</p>
+                          <img
+                            className="meal-image"
+                            src={require(`../assets/images/Salads/${menuData.salaty[key].image}`)}
+                            alt="Image"
+                          />
+                          <div
+                            className={`short-info ${
+                              !selectedItems[key] ? "show" : ""
+                            }`}
+                          >
+                            <h2>{menuData.salaty[key].name}</h2>
+                            <span>
+                              {menuData.salaty[key].price}грн /{" "}
+                              {menuData.salaty[key].weight}г
+                            </span>
+                          </div>
+                          <div
+                            className={`long-info ${
+                              selectedItems[key] ? "show" : ""
+                            }`}
+                          >
+                            <h2>{menuData.salaty[key].name}</h2>
+                            <p>Вага: {menuData.salaty[key].weight}г.</p>
+                            <p>Ціна: {menuData.salaty[key].price}грн.</p>
+                            <p>{menuData.salaty[key].sklad}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               <div className="iconContainer">
                 <a href="#salads">
                   <FontAwesomeIcon className="icon" icon={faCircleUp} />
@@ -163,7 +157,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Zacusky/${menuData.zacusky[key].image}`)}
                           alt="Image"
                         />
                         <div
