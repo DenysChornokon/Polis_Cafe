@@ -12,7 +12,7 @@ import Menu_1 from "../assets/images/menu_page-0001.jpg";
 import Menu_2 from "../assets/images/menu_page-0002.jpg";
 import Menu_3 from "../assets/images/Drinks.jpg";
 
-import "../assets/images/Zacusky/Намазка.jpg"
+import "../assets/images/Stravy_na_kompaniyu/Пивнвя тарелка первая.jpg"
 
 import ImageExample from "../assets/images/Картопля по-селянські.jpg";
 function Menu() {
@@ -211,7 +211,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Supy/${menuData.supy[key].image}`)}
                           alt="Image"
                         />
                         <div
@@ -265,7 +265,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Osnov_Stravy/${menuData.osnovni_stravy[key].image}`)}
                           alt="Image"
                         />
                         <div
@@ -319,7 +319,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Domash_Kuhnia/${menuData.domashnia_kukhnia[key].image}`)}
                           alt="Image"
                         />
                         <div
@@ -377,7 +377,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Garniry/${menuData.garniry[key].image}`)}
                           alt="Image"
                         />
                         <div
@@ -431,7 +431,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Piza&Burgers/${menuData.pizza_and_burgers[key].image}`)}
                           alt=":("
                         />
                         <div
@@ -489,7 +489,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Stravy_na_kompaniyu/${menuData.stravy_na_kompaniyu[key].image}`)}
                           alt="Image"
                         />
                         <div
