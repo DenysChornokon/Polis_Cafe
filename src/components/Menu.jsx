@@ -12,7 +12,7 @@ import Menu_1 from "../assets/images/menu_page-0001.jpg";
 import Menu_2 from "../assets/images/menu_page-0002.jpg";
 import Menu_3 from "../assets/images/Drinks.jpg";
 
-import "../assets/images/Stravy_na_kompaniyu/Пивнвя тарелка первая.jpg"
+import "../assets/images/Snidanky/no-image-icon.png"
 
 import ImageExample from "../assets/images/Картопля по-селянські.jpg";
 function Menu() {
@@ -547,7 +547,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Do_pyva/${menuData.propozytsii_do_piva[key].image}`)}
                           alt=":("
                         />
                         <div
@@ -605,7 +605,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Desserts/${menuData.deserti[key].image}`)}
                           alt=":("
                         />
                         <div
@@ -659,7 +659,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/Snidanky/${menuData.snidanky[key].image}`)}
                           alt=":("
                         />
                         <div
@@ -713,7 +713,7 @@ function Menu() {
                       >
                         <img
                           className="meal-image"
-                          src={ImageExample}
+                          src={require(`../assets/images/B_lunch/${menuData.biznes_lanch[key].image}`)}
                           alt=":("
                         />
                         <div
