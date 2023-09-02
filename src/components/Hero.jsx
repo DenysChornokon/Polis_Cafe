@@ -7,7 +7,7 @@ function Hero() {
     <section className="hero">
       <div className="image-container">
         
-        <img src={mainImage} alt="" className="heroImage" />
+        {/* <img src={mainImage} alt="" className="heroImage" /> */}
       </div>
       <div className="heroText">
         <h1 className="heroName hero">Кулінарний дім «Поліс»</h1>
