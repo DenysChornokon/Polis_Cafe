@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Polis_Cafe/static/css/main.7a5d24d5.css",
-    "main.js": "/Polis_Cafe/static/js/main.ea21b10d.js",
+    "main.css": "/Polis_Cafe/static/css/main.e3e09cd6.css",
+    "main.js": "/Polis_Cafe/static/js/main.02579dcc.js",
     "static/js/787.afea4cd9.chunk.js": "/Polis_Cafe/static/js/787.afea4cd9.chunk.js",
     "static/media/Картопля по-селянські.jpg": "/Polis_Cafe/static/media/Картопля по-селянські.d9ae7e44800a7ae3d885.jpg",
     "static/media/Int_1.jpg": "/Polis_Cafe/static/media/Int_1.cae967063102412bd3a4.jpg",
@@ -75,12 +75,12 @@
     "static/media/slick.ttf": "/Polis_Cafe/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Polis_Cafe/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Polis_Cafe/index.html",
-    "main.7a5d24d5.css.map": "/Polis_Cafe/static/css/main.7a5d24d5.css.map",
-    "main.ea21b10d.js.map": "/Polis_Cafe/static/js/main.ea21b10d.js.map",
+    "main.e3e09cd6.css.map": "/Polis_Cafe/static/css/main.e3e09cd6.css.map",
+    "main.02579dcc.js.map": "/Polis_Cafe/static/js/main.02579dcc.js.map",
     "787.afea4cd9.chunk.js.map": "/Polis_Cafe/static/js/787.afea4cd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a5d24d5.css",
-    "static/js/main.ea21b10d.js"
+    "static/css/main.e3e09cd6.css",
+    "static/js/main.02579dcc.js"
   ]
 }
